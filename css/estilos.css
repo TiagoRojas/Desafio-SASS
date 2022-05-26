@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
+.navbar-icon {
+  width: 50px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a a:visited {
+  color: #ffffff;
+}
+
+.hero {
+  position: relative;
+  background-image: url("../assets/mainbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 750px;
+  height: 50vh;
+}
+
+.hero .herod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .herod h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  -webkit-animation-name: desenfoque;
+          animation-name: desenfoque;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.hero .herod .herobuttondiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero .herod .herotext2 {
+  grid-area: hero;
+}
+
+.hero .herod .herobutton {
+  display: inline-block;
+}
+
+.hero .herod .herobutton a {
+  color: #ffffff;
+  background-color: #0d6efd;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.hero .herod a h1 {
+  color: #ffffff;
+}
+
+.hero .herod a h1 span {
+  color: #0dcaf0;
+}
+
+.hero .bgcolor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 110, 253, 0.3);
+}
+
+@-webkit-keyframes desenfoque {
+  0% {
+    letter-spacing: 5rem;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes desenfoque {
+  0% {
+    letter-spacing: 5rem;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.arrow {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrow a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow img {
+  width: 80px;
+  -webkit-animation-name: arrow-movement;
+          animation-name: arrow-movement;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes arrow-movement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes arrow-movement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+.bordercustom {
+  margin-top: 20px;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left top, right top, from(#6eff92), to(#6effe9));
+  background: linear-gradient(to right, #6eff92, #6effe9);
+}
+
+.infotext {
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infotext .infotextC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.infotext .infotextC .texto {
+  padding: 25px;
+  background-color: #f0f0f0;
+}
+
+.infotext .infotextC .texto h1 {
+  font-weight: 700;
+}
+
+.infotext .infotextC .texto p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.cards .infoC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards .infoC .infocardcont {
+  margin: 0 30px 0 0;
+  width: 20%;
+}
+
+.cards .infoC .infocardcont .infocard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.cards .infoC .infocardcont .infocard img {
+  width: 90px;
+}
+
+.cards .infoC .infocardcont .infocard h3 {
+  color: #2f60ff;
+  font-size: 2rem;
+}
+
+.cards .infoC .infocardcont .infocard p {
+  font-size: 1.2rem;
+}
+
+@media all and (max-width: 768px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .redirectors {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ababab;
+  width: 80%;
+}
+
+footer .redirectors a {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=estilos.css.map */
